@@ -19,8 +19,8 @@ for(int i=0;i<n;i++) {
     int sum=0;
     for(int j=i;j<n;j++) {
         sum+=arr[j];
-        if(k==sum) {
-            len=j;
+        if(k==sum) {0
+            len=j-i+1;
             if(maxlen<len) {
                 maxlen=len;
             }

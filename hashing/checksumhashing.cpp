@@ -19,10 +19,10 @@ int main() {
     int count = 0;
 
     for(int i = 0; i < n; i++) {
-        int complement = target - arr[i];
+        int x = target - arr[i];
 
-        if(freq.find(complement) != freq.end()) {
-            count += freq[complement];
+        if(freq.find(x) != freq.end()) {
+            count += freq[x];
         }
 
         freq[arr[i]]++;

@@ -22,13 +22,13 @@ int main() {
         maxlen=i+1;
     }
     //case2:if prefix_sum-k exists
-    if(mp.find(prefix_sum-k)!=mp.end()) {
+    if(mp.find(prefix_sum-k)!=mp.end()) {// Have we seen a previous sum such that removing it gives k?
         int len=i-mp[prefix_sum-k];
         if(maxlen<len) {
             maxlen=len;
         }
     }
-    //case3:if wont exists
+    //case3:if prefix sum wont exists in map
     if(mp.find(prefix_sum)==mp.end()) {
         mp[prefix_sum]=i;
     }
