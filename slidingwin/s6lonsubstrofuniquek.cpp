@@ -5,7 +5,7 @@ int longsubstring(string str,int k) {
     map<char,int> mp;
     int i=0,j=0,mx=0;
     while(j<str.length()) {
-        mp[str[j]]++;
+        mp[str[j]]++;//inserting in to map and doing all calc at a time
         if(mp.size()<k) {
             j++;
         }
