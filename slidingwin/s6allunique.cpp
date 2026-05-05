@@ -1,4 +1,4 @@
-#include<iostream>
+#include<iostream>  //VARIABLE SIZE WINDOW PROBLEM
 using namespace std;
 #include<map>
 int longsubstring(string str) {
@@ -6,7 +6,12 @@ int longsubstring(string str) {
     int i=0,j=0,mx=0;
     while(j<str.length()) { // If duplicate exists → shrink window
         mp[str[j]]++;
-            while(mp[str[j]]>1) {
+            while(mp[str[j]]>1) {                   //1. Add new character
+                                                    //2. If duplicate created:
+                                                    //remove from left
+                                                    //until duplicate disappears
+                                                    //3. Window becomes valid again
+ 
                 mp[str[i]]--;
                 if(mp[str[i]]==0) {
                     mp.erase(str[i]);

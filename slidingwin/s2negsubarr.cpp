@@ -1,5 +1,5 @@
 #include<iostream>
-#include<vector>
+#include<vector>                //Fixed size window problem
 #include<queue>
 using namespace std;
 vector<int> firstneg(int arr[],int n,int k) {  //a func which returns vector
@@ -42,11 +42,11 @@ int main() {
     for(int i=0;i<n;i++) {
         cin>>arr[i];
     }
-    cout<<"enter k";//take sub array length
+    cout<<"enter the subarray length of which you want -ve num";//take sub array length
     cin>>k;
     vector<int> result=firstneg(arr,n,k);//call the vector func and store it in result vector
     for(int i=0;i<result.size();i++) {
-    cout<<result[i]; 
+    cout<<"the negative numbers which are there in every subarray of size" <<k<<"is"<<result[i]; 
     }
     
     

@@ -1,11 +1,11 @@
-#include<iostream>
+#include<iostream>//FIXED SIZE VARIABLE PROBLEM
 using namespace std;
 #include<map>
 int longsubstring(string str,int k) {
     map<char,int> mp;
     int i=0,j=0,mx=0;
     while(j<str.length()) {
-        mp[str[j]]++;//inserting in to map and doing all calc at a time
+        mp[str[j]]++;//inserting one by one j value to map 
         if(mp.size()<k) {
             j++;
         }

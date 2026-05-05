@@ -32,7 +32,7 @@ int main() {
     cout << "Enter string (uppercase): ";
     cin >> s;
 
-    cout << "Enter k: ";
+    cout << "Enter how many times to be replaced: ";
     cin >> k;
 
     int result = characterReplacement(s, k);

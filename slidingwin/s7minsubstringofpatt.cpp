@@ -73,3 +73,15 @@ int main() {
 
     return 0;
 }
+// Expand window using j until all pattern chars are matched.
+//
+// count == 0 means current window contains
+// all required characters.
+//
+// Then shrink window from left side
+// to remove unnecessary characters
+// and find minimum valid window.
+//
+// If removing a character makes its
+// frequency > 0, window becomes invalid again,
+// so stop shrinking and continue expanding.

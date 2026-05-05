@@ -1,4 +1,4 @@
-#include<iostream>
+#include<iostream>  //VARIABLE SIZE WINDOW PROBLEM
 #include<vector>
 #include<algorithm>
 using namespace std;

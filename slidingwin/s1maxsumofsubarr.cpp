@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 int main() {
-    int n,k;
+    int n,k;                                // fixed size sliding window problem
     cout<<"enter array size";
     cin>>n;
     int arr[n];
@@ -25,7 +25,7 @@ int main() {
           j++;//increase i and j to calculate next subarray
         }
     }
-    cout<<"the maximum sub array of size"<<k<<"is equal to"<<mx;
+    cout<<"the maximum sum of sub array of size"<<k<<"is equal to"<<mx;
     return 0;
     
 
