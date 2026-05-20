@@ -6,6 +6,7 @@ This repository contains my practice of Data Structures and Algorithms using C++
 - Sorting Algorithms
 -hashing problems
 -sliding window problems 
+-two pointers(fast/slow)
 
 ## 🚀 Goal
 To improve problem-solving skills and master DSA concepts.
