@@ -39,3 +39,9 @@ return 0;
 
 
 }
+//find the:
+
+//Longest subarray whose sum = k
+//“If current total sum is too large, did we already see a smaller prefix sum that can be removed so remaining sum becomes k?”
+
+//That is case 2.
