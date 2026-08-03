@@ -42,12 +42,20 @@ int main() {
     for(int i=0;i<n;i++) {
         cin>>arr[i];
     }
-    cout<<"enter the subarray length of which you want -ve num";//take sub array length
+    cout<<"enter the subarray length";//take sub array length
     cin>>k;
     vector<int> result=firstneg(arr,n,k);//call the vector func and store it in result vector
-    for(int i=0;i<result.size();i++) {
-    cout<<"the negative numbers which are there in every subarray of size" <<k<<"is"<<result[i]; 
-    }
+    cout << "First negative integer in every window:\n\n";
+
+for(int i = 0; i < result.size(); i++)
+{
+    cout << "Window [ ";
+
+    for(int j = i; j < i + k; j++)
+        cout << arr[j] << " ";
+
+    cout << "] --> " << result[i] << endl;
+}
     
     
 
