@@ -65,9 +65,9 @@ int main() {
     string res = minwindow(str, pattern);
 
     if(res == "") {
-        cout << "No valid substring found that contains all characters of t" << endl;
+        cout << "No valid substring found that contains all characters of p" << endl;
     } else {
-        cout << "Smallest substring in s that contains all characters of t: "
+        cout << "Smallest substring in s that contains all characters of p: "
              << res << endl;
     }
 
