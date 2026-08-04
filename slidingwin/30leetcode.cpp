@@ -166,3 +166,66 @@ int main() {
 
     return 0;
 }
+// Start
+//   │
+//   ▼
+// Build target frequency map
+//   │
+//   ▼
+// For every offset (0 → wordLength-1)
+//   │
+//   ▼
+// Initialize window
+// (left, right, currentMap, count)
+//   │
+//   ▼
+// Read next word
+//   │
+//   ▼
+// Word exists in target?
+//  ┌───────────────┐
+//  │      No       │
+//  └──────┬────────┘
+//         ▼
+// Clear map
+// count = 0
+// left = right
+//         │
+//         ▼
+// Continue
+
+// Word exists?
+//       │
+//      Yes
+//       │
+//       ▼
+// Add to currentMap
+
+// count++
+
+//       │
+//       ▼
+// Frequency exceeded?
+//       │
+//   Yes ▼
+// Shrink from left
+// until valid
+
+//       │
+//       ▼
+// count == totalWords ?
+//       │
+//  ┌────┴────┐
+//  │   No    │
+//  └────┬────┘
+//       ▼
+// Continue
+
+//       │
+//      Yes
+//       ▼
+// Store answer
+
+// Remove leftmost word
+
+// Continue
